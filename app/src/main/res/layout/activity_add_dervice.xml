@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CDCDCD"
+    tools:context="fitness_equipment.test.com.fitness_equipment.activity.AddDerviceActivity">
+
+    <include layout="@layout/header_bar_small"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/lin_bicycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_table_bicycle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/bicycle" />
+
+            <fitness_equipment.test.com.fitness_equipment.chlibrary.src.com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/bicycle_listviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"></fitness_equipment.test.com.fitness_equipment.chlibrary.src.com.baoyz.swipemenulistview.SwipeMenuListView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_rope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_table_rope"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/rope" />
+
+            <fitness_equipment.test.com.fitness_equipment.chlibrary.src.com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/rope_listviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"></fitness_equipment.test.com.fitness_equipment.chlibrary.src.com.baoyz.swipemenulistview.SwipeMenuListView>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/rl_mai_shebei"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/goumaishebei_bg"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/device_shopping"
+                    android:drawablePadding="10dp"
+                    android:text="购买设备"
+                    android:textColor="#FFF"
+                    android:textSize="20dp" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:src="@mipmap/device_into" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

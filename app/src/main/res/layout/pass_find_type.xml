@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF"
+        >
+
+        <TextView
+            android:id="@+id/dialog_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/pass_find_phone"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#242424"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999999"
+            ></View>
+        <TextView
+            android:id="@+id/dialog_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/pass_find_email"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#242424"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999999"
+            ></View>
+
+        <TextView
+            android:id="@+id/dialog_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#242424"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

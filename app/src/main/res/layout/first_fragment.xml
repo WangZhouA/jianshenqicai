@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+
+        android:text="@string/new_Clock" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/linlay_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        > 
+
+       <fitness_equipment.test.com.fitness_equipment.view.CircleImageView
+           android:id="@+id/daka_img"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:src="@mipmap/male_head"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dp"
+           />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/daka_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="#242424"
+                />
+
+            <TextView
+                android:id="@+id/daka_type"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_bicycle"
+
+                />
+
+        </LinearLayout>
+
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             >
+
+             <TextView
+                 android:id="@+id/daka_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+
+                 android:layout_alignParentRight="true"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginRight="10dp"
+                 />
+
+         </RelativeLayout>
+        
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_tab_bicycle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/action_bicycle"
+            android:gravity="center"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/tv_tab_rope"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Skip_rope"
+            android:gravity="center"
+            android:textSize="16dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <android.support.v4.view.ViewPager
+            android:layout_marginTop="20dp"
+            android:id="@+id/viepager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="7"
+            android:background="#FFF"
+            >
+        </android.support.v4.view.ViewPager>
+
+        <!--第三部分底部栏-->
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:id="@+id/linearlayout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/linlay_bg"
+            android:layout_weight="3"
+            android:layout_marginBottom="15dp"
+
+            >
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout_medal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/img_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_medal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/myMedal"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_Challenge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/img_Challenge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_challenge"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/myChallenge"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_Clock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/img_Clock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_clock"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Clock"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_Movement_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/img_Movement_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_suuj"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Movement_list"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

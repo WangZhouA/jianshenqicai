@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择要分享的平台"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:id="@+id/tv_xl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/sina"
+            android:layout_weight="1"
+            android:text="新浪"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/qq"
+            android:layout_weight="1"
+            android:text="QQ"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_wx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/wechat"
+            android:layout_weight="1"
+            android:text="微信"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:id="@+id/tv_zone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/zone"
+            android:layout_weight="1"
+            android:text="QQ空间"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_wechatt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/wechatt"
+            android:layout_weight="1"
+            android:text="微信朋友圈"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_qqA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/qq"
+            android:layout_weight="1"
+            android:text="QQ"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_cancleA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消分享"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#242424"
+        />
+
+
+
+
+</LinearLayout>

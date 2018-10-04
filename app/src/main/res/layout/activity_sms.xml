@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fitness_equipment.test.com.fitness_equipment.activity.SMSActivity">
+
+    <include layout="@layout/header_bar_small"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <EditText
+        android:id="@+id/sms_et_phone"
+        android:drawablePadding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@mipmap/iphone"
+        android:paddingLeft="10dp"
+        android:background="@drawable/ed_shape"
+        android:hint="@string/sms_number"
+
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ed_shape"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+    <EditText
+        android:id="@+id/sms_et_code"
+        android:layout_width="0dp"
+        android:drawablePadding="20dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@mipmap/validation"
+        android:paddingLeft="10dp"
+        android:background="@null"
+        android:hint="@string/code"
+        android:layout_weight="7"
+        android:maxLength="6"
+        />
+
+        <TextView
+            android:id="@+id/sms_et_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="@string/get_code"
+            android:gravity="center"
+            android:textColor="#242424"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ed_shape"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+    <EditText
+        android:id="@+id/sme_et_newPass"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@mipmap/lock"
+        android:drawablePadding="20dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/ed_shape"
+        android:hint="@string/re_new_pass"
+        android:layout_weight="9"
+        android:maxLength="20"
+        />
+
+        <ImageView
+            android:id="@+id/sme_et_lock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/open"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sms_lin_repass"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ed_shape"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <EditText
+            android:id="@+id/sme_et_determine_number"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:drawableLeft="@mipmap/lock"
+            android:drawablePadding="20dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/ed_shape"
+            android:hint="@string/determine_number"
+            android:layout_weight="9"
+            android:maxLength="20"
+            />
+
+        <ImageView
+            android:id="@+id/ToEqualNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/open"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/sms_btn"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#BFE7DD"
+        android:text="@string/determine"
+        android:textColor="#FFF"
+        />
+
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/sms_textType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ToPhoneFind"
+            android:layout_alignParentBottom="true"
+            android:textColor="#18C49A"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingBottom="40dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

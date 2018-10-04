@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bangdan_number_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:gravity="center"
+            android:textColor="#757575"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <fitness_equipment.test.com.fitness_equipment.view.CircleImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/bangdan_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/male_head" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/bangdan_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:textColor="#242424"
+
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bangdan_kaicls"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="332323大卡"
+                android:textColor="#39C94C"
+                android:textSize="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/linear_dianzang"
+                android:layout_marginEnd="15dp" />
+
+            <LinearLayout
+                android:id="@+id/linear_dianzang"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bangdan_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="888" />
+
+                <ImageView
+                    android:id="@+id/bangdan_xin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/praise_s" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/status_bar_height"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/allmap"
+        android:onClick="doClick"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayouttiming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/header_bar_small" />
+
+            <ImageButton
+                android:id="@+id/ib_timing_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"
+                android:background="#00000000"
+                android:onClick="doClick"
+                android:src="@mipmap/add" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_timing_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayouttiming"
+            android:layout_marginTop="18dp"
+            android:divider="#00000000"
+            android:dividerHeight="18dp" >
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

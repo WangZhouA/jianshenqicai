@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_bar_small"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFF"
+        >
+
+
+        <TextView
+            android:id="@+id/activity_selectimg_send"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:visibility="gone"
+            />
+
+
+    <EditText
+        android:id="@+id/ed_Published"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:gravity="left|top"
+        android:hint="@string/write_yijian"
+        android:background="@null" >
+    </EditText>
+
+    <fitness_equipment.test.com.fitness_equipment.JarPhoto.NoScrollGridView
+        android:id="@+id/noScrollgridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        ></fitness_equipment.test.com.fitness_equipment.JarPhoto.NoScrollGridView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#0E755C"
+        android:textColor="#FFFFFF"
+        android:text="@string/loging"
+        />
+
+</LinearLayout>

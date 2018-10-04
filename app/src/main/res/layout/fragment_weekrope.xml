@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <!--第一部分 公里-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/day_linear_bg"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/count"
+                android:textColor="#FFF"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+
+                />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/averages_count"
+                    android:textColor="#FFF"
+                    android:textSize="12dp"
+                    android:gravity="bottom"
+                    />
+                <TextView
+                    android:id="@+id/tv_pingjun_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="bottom"
+                    android:textColor="#FFF"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/Total_count"
+                    android:textColor="#FFF"
+                    android:textSize="12dp"
+                    android:gravity="bottom"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_zong_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="bottom"
+                    android:textColor="#FFF"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/lineChartViewKm"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <!--第一部分 公里-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/day_linear_bg"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Time"
+                android:textColor="#FFF"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+
+                />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/average_time"
+                    android:textColor="#FFF"
+                    android:textSize="12dp"
+                    android:gravity="bottom"
+                    />
+                <TextView
+                    android:id="@+id/tv_pingjun_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="bottom"
+                    android:textColor="#FFF"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:textColor="#FFF"
+                    android:text="@string/Total_TIME"
+                    android:textSize="12dp"
+                    android:gravity="bottom"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_zong_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="bottom"
+                    android:textColor="#FFF"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/lineChartViewTime"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+    <!--第一部分 公里-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/day_linear_bg"
+        android:layout_marginBottom="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kicals"
+                android:textColor="#FFF"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+
+                />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/average_kical"
+                    android:textColor="#FFF"
+                    android:textSize="12dp"
+                    android:gravity="bottom"
+                    />
+                <TextView
+                    android:id="@+id/tv_pingjun_kical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="bottom"
+                    android:textColor="#FFF"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/Total_kiacl"
+                    android:textColor="#FFF"
+                    android:textSize="12dp"
+                    android:gravity="bottom"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_zong_kical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="bottom"
+                    android:textColor="#FFF"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/lineChartViewKical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+</LinearLayout>

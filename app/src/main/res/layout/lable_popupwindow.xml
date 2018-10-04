@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="250dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_lable"
+        android:background="#f8f8fa"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/btn_lable_cancel"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="#00ffffff"
+            android:text="取消"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_lable_done"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#00ffffff"
+            android:clickable="true"
+            android:text="完成"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <!-- 该标签（继承自View的xml属性）android:clickable的值必须是boolean值，即true、false。该标签目的是设置button是否可以被点击 -->
+
+    <fitness_equipment.test.com.fitness_equipment.view.PickerView
+        android:id="@+id/lable_pv"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_below="@+id/ll_lable" />
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+         android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/paihang_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/female_head2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/paihang_haoyou_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="懒猫"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="#545454"
+                    />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/paihang_runs"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="332大卡"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#FFA050"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:id="@+id/linear_dianzang"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/paihang_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="888"
+                    android:gravity="center"
+                    />
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/paihang_xin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/praise_s"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

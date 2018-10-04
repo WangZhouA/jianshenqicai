@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fitness_equipment.test.com.fitness_equipment.activity.MyMedalActivity">
+
+
+    <include layout="@layout/header_bar_small"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CDCDCD"
+        ></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:background="#FFF"
+        >
+
+        <TextView
+            android:id="@+id/imgOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/get_medal"
+            android:layout_weight="1"
+            android:text="挑战5公里"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/imgTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/get_medal"
+            android:layout_weight="1"
+            android:text="挑战10公里"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/imgThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/get_medal"
+            android:layout_weight="1"
+            android:text="挑战12公里"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="7"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="20dp"
+                android:textColor="#19C49B"
+                android:textStyle="bold"
+                />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Nomedal"
+               android:layout_marginLeft="20dp"
+               />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/medal"
+                android:layout_weight="1"
+                android:text="挑战5公里"
+                android:gravity="center"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/medal"
+                android:layout_weight="1"
+                android:text="挑战10公里"
+                android:gravity="center"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/medal"
+                android:layout_weight="1"
+                android:text="挑战12公里"
+                android:gravity="center"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果 -->
+    <dimen name="pickerview_textsize">20sp</dimen>
+
+    <!-- 高 -->
+
+     <dimen name="height_toolbar">@dimen/material_height_toolbar</dimen>
+    <dimen name="padding_left_header_title">@dimen/material_padding_left_header_title</dimen>
+	<dimen name="text_size_activity_title">@dimen/material_text_size_headline</dimen>
+	<dimen name="margin_horizontal">@dimen/material_classic_padding</dimen>
+	<dimen name="text_size_activity_connection_title">@dimen/material_text_size_display1</dimen>
+	<dimen name="text_size_body">@dimen/material_text_size_body</dimen>
+	<dimen name="padding_bottom_header_subtitle">@dimen/material_classic_padding</dimen>
+	<dimen name="padding_left_header_subtitle">@dimen/material_padding_left_header_title</dimen>
+	<dimen name="text_size_activity_subtitle">@dimen/material_text_size_subhead</dimen>
+	<dimen name="elevation_button_flat">@dimen/no_elevation</dimen>
+	<dimen name="text_size_section_title">@dimen/material_text_size_subhead</dimen>
+	<dimen name="text_size_button">@dimen/material_text_size_button</dimen>
+	<dimen name="text_size_tile_title">@dimen/material_text_size_title</dimen>
+	<dimen name="height_min_touch">@dimen/material_height_min_touch</dimen>
+	<dimen name="padding_settings_horizontal">@dimen/material_classic_padding</dimen>
+	<dimen name="text_size_settings">@dimen/material_text_size_subhead</dimen>
+	
+	
+	<dimen name="material_text_size_subhead">16sp</dimen>
+	<dimen name="material_padding_left_header_title">72dp</dimen>
+	<dimen name="material_text_size_headline">24sp</dimen>
+	<dimen name="material_classic_padding">16dp</dimen>
+	<dimen name="material_text_size_body">14sp</dimen>
+	<dimen name="no_padding">0dp</dimen>
+	<dimen name="material_text_size_display1">34sp</dimen>
+	<dimen name="no_elevation">0dp</dimen>
+	<dimen name="margin_button_flat_vertical">6dp</dimen>
+	<dimen name="margin_button_flat_horizontal">8dp</dimen>
+	<dimen name="height_button_flat">36dp</dimen>
+	<dimen name="padding_button_flat_horizontal">4dp</dimen>
+	<dimen name="no_animation">0dp</dimen>
+	<dimen name="no_corner">0dp</dimen>
+	<dimen name="no_border">0dp</dimen>
+	<dimen name="margin_bottom_title">4dp</dimen>
+	<dimen name="material_height_toolbar">56dp</dimen>
+	<dimen name="status_bar_height">18dp</dimen>
+	<dimen name="material_text_size_button">14sp</dimen>
+	<dimen name="margin_tiles">4dp</dimen>
+	<dimen name="material_text_size_title">20sp</dimen>
+	<dimen name="padding_tiles_inside">12dp</dimen>
+	<dimen name="padding_tiles_inside_half">6dp</dimen>
+	<dimen name="material_height_min_touch">48dp</dimen>
+	<dimen name="padding_button_vertical">4dp</dimen>
+	<dimen name="elevation_toolbar">2dp</dimen>
+
+</resources>
